@@ -1,2 +1,26 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="text-center">API Basejump: URL Shortener Microservice</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+			<p><strong>User stories:</strong></p>
+			<ol>
+				<li> I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+				<li> If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.</li>
+				<li> When I visit that shortened URL, it will redirect me to my original link.</li>
+			</ol>
+
+			<h3>Example usage:</h3>
+			<p><span class="alert-danger">https://lut-url.herokuapp.com/http://www.google.com</span></p>
+			<p><span class="alert-danger">https://lut-url.herokuapp.com/</span></p>
+			<p>Welcome to {{title}}</p>
+
+			<h3>Example output:</h3>
+			<p><span class="alert-danger">{"original":"http://www.google.com", "shortened":"https://lut-url.herokuapp.com/"}</span></p>
+		</div>
+	</div>
+</div>
