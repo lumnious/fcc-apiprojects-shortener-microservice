@@ -1,7 +1,7 @@
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 
-var url = process.env.MONGOLAB_URI || 'mongodb://localhost:27017/shorturl';
+var url = process.env.MONGODB_URI || 'mongodb://localhost:27017/shorturl';
 var prj = {"_id": 0, "code": 1, "originalURL": 1};
 
 var exports = module.exports = {};
